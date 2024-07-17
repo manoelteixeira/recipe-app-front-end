@@ -9,10 +9,10 @@ function Recipe({ recipe }) {
             <td> {recipe.image}</td>
             <td>{recipe.serving}</td>
             <td>{recipe.prepare_time}</td>
-            <td>{song.is_favorite ? "⭐️" : " "}</td>
+            <td>{recipe.is_favorite ? "⭐️" : " "}</td>
 
         </tr>
     );
 }
 
-export default Song;
+export default Recipe;
