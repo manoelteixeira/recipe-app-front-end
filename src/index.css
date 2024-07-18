@@ -3,31 +3,25 @@ body {
   margin: 0;
   padding: 20px;
   background-color: #f8f9fa;
+  background-image: url(Components/fresh-colourful-ingredients-mexican-cuisine_23-2148254294.avif);
+  background-repeat: no-repeat;
+background-size: cover;
 }
 
-.show-page,
-.edit-page,
-.new-page {
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 800px;
-  background-color: #ffffff;
-  border: 1px solid #dee2e6;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
 
 table {
-  width: 100%;
+  width: 90%;
   border-collapse: collapse;
   margin-bottom: 20px;
+  padding: 20px;
+ 
 }
 
 table th,
 table td {
-  border: 1px solid #dee2e6;
-  padding: 10px;
-  text-align: left;
+ border: 1px solid #4d535a;
+ padding: 10px;
+  text-align: center;
 }
 
 table th {
@@ -54,21 +48,6 @@ label {
   margin-top: 10px;
 }
 
-input[type="text"],
-input[type="number"],
-input[type="checkbox"] {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  margin-bottom: 10px;
-  border: 1px solid #dee2e6;
-  border-radius: 3px;
-}
-
-input[type="checkbox"] {
-  width: auto;
-}
-
 nav {
   height: 100px;
   display: flex;
@@ -76,4 +55,21 @@ nav {
   justify-content: space-around;
 
 
+}
+.New, .Index, .Show, .Edit, .Home{
+  padding: 50px 0 0 50px;
+  text-align: center;
+
+}
+.show-page, .Edit-page, .New-page {
+  text-align: center;
+  border: 1px solid #aab6e9;
+   background-color: rgb(130, 199, 242);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 4px 4px rgb(159, 159, 159);
+  width: 600px;
+  height: max-content;
+  margin: auto;
+  box-shadow: 5px 5px #588297;
 }
