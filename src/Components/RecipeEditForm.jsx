@@ -28,7 +28,7 @@ function RecipeEditForm() {
     const updateRecipe = () => {
         fetch(`${API}/recipes/${id}`, {
             method: "PUT",
-            body: JSON.stringify(recipe),
+            body: JSON.stringify({ ...recipe, serving: Number(recipe.serving), prepare_time: Number(recipe.prepare_time) }),
             headers: {
                 "Content-Type": "application/json"
             }
