@@ -26,7 +26,6 @@ function RecipeNewForm() {
         })
             .then(res => res.json())
             .then(res => {
-                console.log(res)
                 navigate("/recipes")
             })
             .catch(err => console.log(err))
@@ -59,7 +58,7 @@ function RecipeNewForm() {
                 /> <br />
                 <label htmlFor="image">Image:</label> <br />
                 <input
-                    id=""
+                    id="image"
                     value={recipe.image}
                     type="text"
                     onChange={handleTextChange}
