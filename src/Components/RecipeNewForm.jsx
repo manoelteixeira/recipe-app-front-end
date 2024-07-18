@@ -23,6 +23,8 @@ function RecipeNewForm() {
         ...recipe,
         ingredients: Array(recipe.ingredients.split(",")),
         instructions: Array(recipe.instructions.split(",")),
+        serving: Number(recipe.serving),
+        prepare_time: Number(recipe.prepare_time),
       }),
       headers: {
         "Content-Type": "application/json",
@@ -30,6 +32,7 @@ function RecipeNewForm() {
     })
       .then((res) => res.json())
       .then((res) => {
+        console.log(res);
         navigate("/recipes");
       })
       .catch((err) => console.log(err));
