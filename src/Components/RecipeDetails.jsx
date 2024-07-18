@@ -21,12 +21,12 @@ function RecipeDetails() {
     }, [])
     // Be able to delete a color. Return to index view.
     const handleDelete = () => {
-        fetch(`${API}/songs/${id}`, {
+        fetch(`${API}/recipes/${id}`, {
             method: "DELETE",
         })
             .then(res => res.json())
             .then(res => {
-                navigate("/songs")
+                navigate("/recipes")
             })
             .catch(err => console.log(err))
     };
@@ -34,12 +34,13 @@ function RecipeDetails() {
     return (
         <article className="show-page">
             <p>Name: {recipe.name}</p>
-            <p>Image: {recipe.image}</p>
+            <p>Image: <img src={recipe.image} width={'200px'} /></p>
             <p>Ingredients: {recipe.ingredients}</p>
             <p>Instructions:{recipe.instructions}</p>
             <p>Serving: {recipe.serving}</p>
             <p>Prepare_time: {recipe.prepare_time}</p>
-            <p>Favorite: {recipe.is_favorite ? "⭐️" : null}</p>
+            <p>Favorite:{recipe.is_favorite ? <span>⭐️</span> : null}
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
 
 
             <div className="showNavigation">
