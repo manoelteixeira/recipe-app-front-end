@@ -2,23 +2,27 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-image: url(Components/pexels-goumbik-616401.jpg);
- background-size: cover;
- background-repeat: no-repeat;
- width: 100%;
- height: 100%;
- box-sizing: border-box;
+  background-image: url(Components/photo.jpg);
+  background-size: cover;
+   background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  color: rgb(97, 97, 88);
  
 }
 table {
-  width: 80%;
-  height: 80%;
+  width: 40%;
+  height: 40%;
   border-collapse: collapse;
   padding: 15px;
+  color: rgb(93, 93, 77);
+  margin-left: 45%;
+  background-color: transparent;
+
 }
 table th,
 table td {
- border: 1px solid #dee2e6;
  padding: 10px;
  text-align: center;
 }
@@ -39,18 +43,18 @@ button:hover {
 }
 
 select{
-  width: 20%;
-  border: 1px solid var(--select-border);
+  width: 5%;
+  border: 1px solid #32373c;
   border-radius: 10px;
   cursor: pointer;
   line-height: 1.1;
   padding: 5px;
+  background-color: transparent;
 
 }
 select::-ms-expand {
   display: none;
 }
-
 
 nav {
   height: 100px;
@@ -63,23 +67,29 @@ nav {
 .New, .Index, .Show, .Edit, .Home{
   padding: 50px 0 0 50px;
   text-align: center;
+ 
 
 }
 .show-page, .Edit-page, .New-page {
   text-align: center;
   border: 1px solid #aab6e9;
-  background-color: rgb(242, 225, 130);
+  background-color: rgb(228, 226, 216);
   padding: 20px;
   border-radius: 20px;
-  /* box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px; */
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   width: 600px;
   height: max-content;
-  margin: auto;
-  box-shadow: 5px 5px #588297;
+ margin-left: 35%;
+ 
 }
-.Index{
-  background-image: url(Components/fresh-colourful-ingredients-mexican-cuisine_23-2148254294.avif);
-  background-repeat: no-repeat;
-background-size: cover;
+.Recipe a,
+.New-recipe a, .recipe-link  {
+    text-decoration: none;
+    color: inherit; 
 }
 
+.Recipe a:hover,
+.New-recipe a:hover,
+.recipe-link:hover {
+  background-color: #ecda4d;
+}
