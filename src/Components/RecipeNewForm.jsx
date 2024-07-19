@@ -22,7 +22,7 @@ function RecipeNewForm() {
       body: JSON.stringify({
         ...recipe,
         ingredients: Array(recipe.ingredients.split(",")),
-        instructions: Array(recipe.instructions.split(",")),
+        instructions: Array(recipe.instructions.split("\n")),
         serving: Number(recipe.serving),
         prepare_time: Number(recipe.prepare_time),
       }),
@@ -76,24 +76,24 @@ function RecipeNewForm() {
         />{" "}
         <br />
         <label htmlFor="ingredients">Ingredients:</label> <br />
-        <input
+        <textarea
           id="ingredients"
           value={recipe.ingredients}
           type="text"
           onChange={handleTextChange}
           placeholder="ingredients"
           required
-        />{" "}
+        ></textarea>{" "}
         <br />
         <label htmlFor="instructions">Instructions:</label> <br />
-        <input
+        <textarea
           id="instructions"
           value={recipe.instructions}
           type="text"
           onChange={handleTextChange}
           placeholder="instructions"
           required
-        />{" "}
+        ></textarea>{" "}
         <br />
         <label htmlFor="serving">serving:</label> <br />
         <input
