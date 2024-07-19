@@ -25,12 +25,20 @@ function RecipeEditForm() {
   };
 
   const updateRecipe = () => {
+    const ingredients =
+      typeof recipe.ingredients == "string"
+        ? recipe.ingredients.split(",")
+        : recipe.ingredients;
+    const instructions =
+      typeof recipe.instructions == "string"
+        ? recipe.instructions.split("\n")
+        : recipe.instructions;
     fetch(`${API}/recipes/${id}`, {
       method: "PUT",
       body: JSON.stringify({
         ...recipe,
-        ingredients: Array(recipe.ingredients.split(",")),
-        instructions: Array(recipe.instructions.split("\n")),
+        ingredients: ingredients,
+        instructions: instructions,
         serving: Number(recipe.serving),
         prepare_time: Number(recipe.prepare_time),
       }),
@@ -40,7 +48,6 @@ function RecipeEditForm() {
     })
       .then((res) => res.json())
       .then((res) => {
-        console.log(res);
         navigate(`/recipes/${id}`);
       })
       .catch((err) => console.log(err));
@@ -51,7 +58,6 @@ function RecipeEditForm() {
     fetch(`${API}/recipes/${id}`)
       .then((res) => res.json())
       .then((res) => {
-        console.log(res);
         setRecipe(res);
       })
       .catch((err) => console.log(err));
