@@ -1,4 +1,4 @@
-# Recipe App 🎶
+# Recipe App 
 
 Recipe App is a full-stack application that allows users to manage their food recipe collection. Users can view, add, edit, and delete recipes, as well as mark their favorite foods.
 
