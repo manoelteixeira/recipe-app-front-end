@@ -13,7 +13,6 @@ Recipe App is a full-stack application that allows users to manage their food re
 - **CRUD Operations**: Create, Read, Update, Delete recipes.
 - **Favorite Foods**: Mark recipe as favorites and toggle the favorite status directly from the index page.
 - **Responsive Design**: Uses Bootstrap for styling.
-- **Page Transitions**: Smooth page transitions using `react-transition-group`.
 - **404 Page**: Custom 404 page for unknown routes.
 - **Confirmation Prompt**: Confirmation prompt before deleting a recipe.
 
