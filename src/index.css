@@ -62,7 +62,11 @@ nav {
   align-items: center;
   justify-content: space-around;
   font-size: 30px; 
+  margin-left: 20%;
 
+}
+h3, h2{
+  margin-left: 10%;
 }
 .New, .Index, .Show, .Edit, .Home{
   padding: 50px 0 0 50px;
@@ -89,7 +93,15 @@ nav {
 }
 
 .Recipe a:hover,
-.New-recipe a:hover,
 .recipe-link:hover {
-  background-color: #ecda4d;
+  background-color: #f0ebc6;
+}
+.back{
+  margin-left: 20%;
+}
+.showNavigation {
+  width: 40%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
 }

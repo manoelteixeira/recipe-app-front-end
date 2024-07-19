@@ -6,7 +6,7 @@ function Index() {
         <div className="Index">
             <Recipes />
             <Link to={`/`}>
-                <button>Back</button>
+                <button className="back">Back</button>
             </Link>
         </div>
     );
