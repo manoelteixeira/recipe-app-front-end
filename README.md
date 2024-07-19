@@ -30,7 +30,7 @@ Recipe App is a full-stack application that allows users to manage their food re
 - [API Endpoints](#api-endpoints)
 - [Components](#components)
 - [Contributing](#contributing)
-- [License](#license)
+
 
 ## Installation
 
