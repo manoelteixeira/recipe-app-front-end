@@ -39,8 +39,8 @@ function RecipeDetails() {
             <p>Instructions:{recipe.instructions}</p>
             <p>Serving: {recipe.serving}</p>
             <p>Prepare_time: {recipe.prepare_time}</p>
-            <p>Favorite:{recipe.is_favorite ? <span>⭐️</span> : null}
-                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+            <p>Favorite:{recipe.is_favorite ? "🌟" : "🚫"}
+            </p>
 
 
             <div className="showNavigation">

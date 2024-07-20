@@ -9,7 +9,7 @@ function Recipe({ recipe }) {
             <td> <img src={recipe.image} width={'200px'} /></td>
             <td>{recipe.serving}</td>
             <td>{recipe.prepare_time}</td>
-            <td>{recipe.is_favorite ? "⭐️" : " "}</td>
+            <td>{recipe.is_favorite ? "🌟" : "🚫"}</td>
 
         </tr>
     );

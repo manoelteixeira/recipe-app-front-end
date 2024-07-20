@@ -4,7 +4,13 @@ Recipe App is a full-stack application that allows users to manage their food re
 
 <br/>
 <p align="center">
-    <img width="80%" src="./src/2B40A745-C844-4C4B-A947-0D46A229279A.jpeg">
+    <img width="80%" src="./src/homePage.jpeg">
+</p>
+<br/>
+
+<br/>
+<p align="center">
+    <img width="80%" src="./src/indexPage.jpeg">
 </p>
 <br/>
 
@@ -18,10 +24,15 @@ Recipe App is a full-stack application that allows users to manage their food re
 
 <br/>
 <p align="center">
-    <img width="80%" src="">
+    <img width="80%" src="./src/showPage.jpeg">
 </p>
 <br/>
 
+<br/>
+<p align="center">
+    <img width="80%" src="./src/newPage.jpeg">
+</p>
+<br/>
 ## Table of Contents
 
 - [Installation](#installation)
