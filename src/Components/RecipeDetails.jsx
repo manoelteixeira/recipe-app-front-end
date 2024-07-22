@@ -10,19 +10,17 @@ function RecipeDetails() {
   let navigate = useNavigate();
   let { id } = useParams();
 
-  // On page load, load color details
   useEffect(() => {
     setLoading(true);
     fetch(`${API}/recipes/${id}`)
       .then((res) => res.json())
       .then((res) => {
-        console.log(res);
         setRecipe(res);
         setLoading(false);
       })
       .catch((err) => console.log(err));
   }, []);
-  // Be able to delete a color. Return to index view.
+
   const handleDelete = () => {
     fetch(`${API}/recipes/${id}`, {
       method: "DELETE",
@@ -59,9 +57,15 @@ function RecipeDetails() {
             ))}
           </ul>
         </div>
-        <p>Serving: {recipe.serving}</p>
-        <p>Prepare_time: {recipe.prepare_time}</p>
-        <p>Favorite:{recipe.is_favorite ? "🌟" : "🚫"}</p>
+        <p className="show-page__subtitle">
+          Serving: <span>{recipe.serving}</span>
+        </p>
+        <p className="show-page__subtitle">
+          Prepare Time: <span>{recipe.prepare_time}</span>
+        </p>
+        <p className="show-page__subtitle">
+          Favorite: <span>{recipe.is_favorite ? "🌟" : "🚫"}</span>
+        </p>
 
         <div className="showNavigation">
           <div>

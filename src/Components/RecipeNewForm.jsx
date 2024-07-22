@@ -15,7 +15,6 @@ function RecipeNewForm() {
     is_favorite: false,
   });
 
-  // Add a color. Redirect to the index view.
   const addRecipe = () => {
     fetch(`${API}/recipes`, {
       method: "POST",

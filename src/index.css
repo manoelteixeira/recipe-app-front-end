@@ -136,3 +136,12 @@ h2 {
 .show-page__instructions li {
   text-align: left;
 }
+
+.show-page__subtitle {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.show-page__subtitle span {
+  font-size: 22px;
+}
