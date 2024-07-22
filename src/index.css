@@ -4,7 +4,7 @@ body {
   padding: 0;
   background-image: url(Components/photo.jpg);
   background-repeat: repeat-y;
-  background-size: cover; 
+  background-size: cover;
   background-attachment: fixed;
   width: 100vw;
   height: 100vh;
@@ -107,7 +107,7 @@ h2 {
   display: flex;
   justify-content: space-between;
 }
-.search{
+.search {
   border: 1px solid #32373c;
   border-radius: 10px;
   cursor: pointer;
@@ -115,8 +115,24 @@ h2 {
   padding: 5px;
   background-color: transparent;
   margin-left: 30px;
-
 }
-.filter{
+.filter {
   margin-left: 30%;
+}
+
+.show-page__title {
+  font-size: 32px;
+  font-weight: bolder;
+}
+
+.show-page__ingredients p,
+.show-page__instructions p {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.show-page__ingredients li,
+.show-page__instructions li {
+  text-align: left;
 }
