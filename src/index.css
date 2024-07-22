@@ -98,7 +98,7 @@ h2 {
 .recipe-link:hover {
   background-color: #f0ebc6;
 }
-.back {
+.home {
   margin-left: 20%;
 }
 .showNavigation {
@@ -106,4 +106,17 @@ h2 {
   margin: auto;
   display: flex;
   justify-content: space-between;
+}
+.search{
+  border: 1px solid #32373c;
+  border-radius: 10px;
+  cursor: pointer;
+  line-height: 1.1;
+  padding: 5px;
+  background-color: transparent;
+  margin-left: 30px;
+
+}
+.filter{
+  margin-left: 30%;
 }

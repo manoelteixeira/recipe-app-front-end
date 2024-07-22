@@ -84,7 +84,7 @@ function RecipeEditForm() {
         <br />
         <label htmlFor="image">Image:</label> <br />
         <input
-          id=""
+          id="image"
           value={recipe.image}
           type="text"
           onChange={handleTextChange}
