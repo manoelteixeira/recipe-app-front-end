@@ -145,3 +145,25 @@ h2 {
 .show-page__subtitle span {
   font-size: 22px;
 }
+
+table img {
+  display: block;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.show-page img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.Recipes__loading {
+  font-size: 32px;
+  font-weight: bolder;
+  text-align: center;
+  padding: 15%;
+}

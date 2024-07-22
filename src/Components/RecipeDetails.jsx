@@ -32,9 +32,11 @@ function RecipeDetails() {
       .catch((err) => console.log(err));
   };
   if (loading) {
-    <article className="show-page">
-      <p className="show-page__title">Loading</p>
-    </article>;
+    return (
+      <article className="show-page">
+        <p className="show-page__title">Loading...</p>
+      </article>
+    );
   } else {
     return (
       <article className="show-page">
